@@ -42,6 +42,7 @@ THE SOFTWARE.
 #define BOARD_usb2can     4
 #define BOARD_canalyze     5
 #define BOARD_cannette    6
+#define BOARD_namepending    7
 
 #if BOARD == BOARD_candleLight
 	#define USBD_PRODUCT_STRING_FS		(uint8_t*) "candleLight USB to CAN adapter"
@@ -162,6 +163,12 @@ THE SOFTWARE.
 
 	#define DCDCEN_Port GPIOC
 	#define DCDCEN_Pin GPIO_PIN_15		/* activate DCDC converter, active high */
+#elif BOARD == BOARD_namepending
+	#define USBD_PRODUCT_STRING_FS			(uint8_t*) "namepending"
+	#define USBD_MANUFACTURER_STRING		(uint8_t*) "namepending"
+	#define DFU_INTERFACE_STRING_FS			(uint8_t*) "namepending"
+	#define CAN_S_Pin GPIO_PIN_4
+	#define CAN_S_GPIO_Port GPIOB	
 #else
 	#error please define BOARD
 #endif
