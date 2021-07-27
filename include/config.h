@@ -170,6 +170,18 @@ THE SOFTWARE.
 	#define DFU_INTERFACE_STRING_FS			(uint8_t*) "namepending"
 	#define CAN_S_Pin GPIO_PIN_4
 	#define CAN_S_GPIO_Port GPIOB	
+	
+	//candlelight seems to need these to be defined
+	#define LED1_GPIO_Port GPIOB
+	#define LED1_Pin GPIO_PIN_0	/* green */
+	#define LED1_Mode GPIO_MODE_OUTPUT_PP
+	#define LED1_Active_High 1
+
+	#define LED2_GPIO_Port GPIOB
+	#define LED2_Pin GPIO_PIN_1	/* blue */
+	#define LED2_Mode GPIO_MODE_OUTPUT_PP
+	#define LED2_Active_High 0
+
 #else
 	#error please define BOARD
 #endif
