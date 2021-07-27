@@ -140,7 +140,7 @@ endfunction()
 
 ########## generate list of targets.
 # the "_fw" part is appended automatically
-set(TGT042_LIST "cantact" "canalyze" "canable" "usb2can" "cannette")
+set(TGT042_LIST "cantact" "canalyze" "canable" "usb2can" "cannette" "namepending")
 set(TGT072_LIST "candleLight")
 
 

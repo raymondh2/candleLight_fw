@@ -163,6 +163,7 @@ THE SOFTWARE.
 
 	#define DCDCEN_Port GPIOC
 	#define DCDCEN_Pin GPIO_PIN_15		/* activate DCDC converter, active high */
+	
 #elif BOARD == BOARD_namepending
 	#define USBD_PRODUCT_STRING_FS			(uint8_t*) "namepending"
 	#define USBD_MANUFACTURER_STRING		(uint8_t*) "namepending"
